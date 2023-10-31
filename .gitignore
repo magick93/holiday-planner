@@ -34,3 +34,24 @@ yarn-error.log*
 
 # vercel
 .vercel
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/__init__.cpython-310.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/__init__.pypy39.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/api.cpython-310.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/api.pypy39.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/geocodingview.cpython-310.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/geocodingview.pypy39.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/holidayplanner_admin.cpython-310.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/models.cpython-310.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/models.pypy39.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/pg_models.cpython-310.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/settings.cpython-310.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/settings.pypy39.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/supabase.cpython-310.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/supabase.pypy39.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/urls.cpython-310.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/urls.pypy39.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/wsgi.cpython-310.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/__pycache__/wsgi.pypy39.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/migrations/__pycache__/__init__.cpython-310.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/migrations/__pycache__/0001_initial.cpython-310.pyc
+apps/holiday-planner-api/holiday_planner/holiday_planner/tests/__pycache__/HolidayPlannerAdminTest.cpython-310.pyc

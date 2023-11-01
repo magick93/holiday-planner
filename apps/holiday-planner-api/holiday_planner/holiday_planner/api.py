@@ -1,5 +1,5 @@
 from .models import Attraction, AttractionModelService, Category, CategorySchema, CountrySchema, TouristCountry, TouristPlace, PlaceModelService
-from .pg_models import Country
+from .pg_models import Country, Place
 from django.core.exceptions import ObjectDoesNotExist
 from ninja import Schema, constants
 from icecream import ic
@@ -86,9 +86,9 @@ class AttractionModelController(ModelControllerBase):
 
 @api_controller("/places")
 class PlaceModelController(ModelControllerBase):
-    service = PlaceModelService(model=TouristPlace)
+    service = PlaceModelService(model=Place)
     model_config = ModelConfig(
-        model=TouristPlace,        
+        model=Place,        
         schema_config=ModelSchemaConfig(read_only_fields=["id"]),
     )
 
@@ -96,7 +96,7 @@ class PlaceModelController(ModelControllerBase):
         path="/places/{int:country_id}/",
         schema_out=model_config.retrieve_schema,
         # lookup_param='country_id',
-        queryset_getter=lambda self, **kw: TouristCountry.objects.filter(pk=kw['country_id']).first().places.all()
+        queryset_getter=lambda self, **kw: Country.objects.filter(pk=kw['country_id']).first().places.all()
     )
 
 

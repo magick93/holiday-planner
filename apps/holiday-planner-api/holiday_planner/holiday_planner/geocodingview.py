@@ -36,9 +36,6 @@ class GeoCodingAPIView(APIView):
 
             places = str(json.dumps(results_array))
 
-            print(places)
-
-
             try:
                 # upsert_places = supabase.rpc('upsert_places', {"data":places}).execute()
                 upsert_places = supabase.rpc('upsert_places', {"data":json.loads(places)}).execute()

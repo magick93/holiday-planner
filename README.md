@@ -8,6 +8,7 @@
 
 1. `pnpm i` should install supabase.
 1. `pnpm dev`  to spin up supabase. This may take a few minutes as it will pull down some docker images.
+1. Add a file called `.env` to `apps/holiday-planner-api/holiday_planner/.env`. Or rename `.example.env` to `.env`
 1. Change directory to `apps/holiday-planner-api/holiday_planner`. See also `apps/holiday-planner-api/README.md`
 
 

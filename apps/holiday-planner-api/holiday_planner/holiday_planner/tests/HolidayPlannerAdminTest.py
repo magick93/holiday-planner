@@ -20,7 +20,7 @@ class HolidayPlannerAdminTest(TestCase):
         mock_get.return_value = mock_country
 
         # Call the toggle_is_public method with a dummy iso code
-        old_value, new_value = HolidayPlannerAdmin.toggle_is_public('US')
+        old_value, new_value = HolidayPlannerAdmin.toggle_is_public(self, iso='US')
 
         # Check that the old and new values are correct
         self.assertEqual(old_value, False)
@@ -33,7 +33,7 @@ class HolidayPlannerAdminTest(TestCase):
 
         # Call the toggle_is_public method with a dummy iso code and check for the exception
         with self.assertRaises(ObjectDoesNotExist):
-            HolidayPlannerAdmin.toggle_is_public('ZZ')
+            HolidayPlannerAdmin.toggle_is_public(self, iso='ZZ')
 
 if __name__ == '__main__':
     unittest.main()
